@@ -11,17 +11,17 @@
 <body>
 
   <div class="container">
-    <h1>final-node</h1>
     
     <div class="row">
+      <h2>Evaluar estudiantes</h2>
       <div class="col-sm-12">
         <form id="setStudentNotes">
           <div class="form-group">
-            <label for="studentId">student ID</label>
+            <label for="studentId">Identificador de estudiante</label>
             <input id="studentId" type="text" class="form-control"></input>
           </div>
           <div class="form-group">
-            <label for="note">Set data(number)</label>
+            <label for="note">Nota</label>
             <input id="note" type="number" class="form-control"></input>
           </div>
           <br>
@@ -29,21 +29,47 @@
         </form>
       </div>
     </div>
+    <br><br><br>
+
 
     <div class="row">
+      <h2>Ver notas</h2>
       <div class="col-sm-12">
         <form id="getStudentNotes">
           <div class="form-group">
-            <label for="studentId">student ID</label>
+            <label for="studentId">Identificador de estudiante</label>
             <input id="studentId" type="text" class="form-control"></input>
           </div>
           <br>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div>Student Note: <span id="seeNote"></span></div>
+        <div>Nota: <span id="seeNote"></span></div>
       </div>
     </div>
-  </div>
+    <br><br><br>
+
+  
+    <div class="row">
+      <h1>Admin</h1>
+      <div class="col-sm-12">
+        <h4>Dueño del contrato: <span id="seeOwner"></span> </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form id="changeOwner">
+          <div class="form-group">
+            <label for="newOwnerAddress">Cambiar Dueño del contrato</label>
+            <input id="newOwnerAddress" type="text" class="form-control"></input>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+</div>
 
 </body>
 </html>
