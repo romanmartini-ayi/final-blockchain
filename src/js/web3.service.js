@@ -1,8 +1,7 @@
 import Web3 from 'web3';
 import StudentNote from '../../build/contracts/StudentNote.json';
 
-export let web3;
-export let contract;
+export let web3, contract;
 
 const initWeb3 = async  () => {
   try {
@@ -19,12 +18,7 @@ const initWeb3 = async  () => {
 
 const initContract =  () => {
   const deploymentKey = Object.keys(StudentNote.networks)[0];
-  return new web3.eth.Contract(
-    StudentNote.abi, 
-    StudentNote
-      .networks[deploymentKey]
-      .address
-  );
+  return new web3.eth.Contract(StudentNote.abi, StudentNote.networks[deploymentKey].address);
 };
 
 export const web3Service = async () => {

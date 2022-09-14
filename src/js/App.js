@@ -1,4 +1,4 @@
-import { web3, contract } from "./config";
+import { web3, contract } from "./web3.service";
 
 export const initApp = () => {
   const $setStudentNotes = document.getElementById('setStudentNotes');
