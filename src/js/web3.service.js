@@ -27,7 +27,7 @@ const initContract =  () => {
   );
 };
 
-export const config = async () => {
+export const web3Service = async () => {
   web3 = await initWeb3();
   contract = initContract();
 };
